@@ -1,13 +1,14 @@
 {
   "expo": {
-    "name": "narfu-schedule",
-    "slug": "narfu-schedule",
+    "name": "next",
+    "slug": "next",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "automatic",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "ru.example.ltkschedule"
     },
     "android": {
       "adaptiveIcon": {
@@ -16,10 +17,29 @@
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
       },
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "ru.example.ltkschedule"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-router",
+      "expo-web-browser",
+      "expo-secure-store",
+      "expo-font",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 160,
+          "backgroundColor": "#F3F6FB",
+          "dark": {
+            "backgroundColor": "#0A111E"
+          }
+        }
+      ]
+    ],
+    "scheme": "ru.example.ltkschedule"
   }
 }
